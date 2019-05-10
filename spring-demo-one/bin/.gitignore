@@ -1,2 +1,3 @@
-/applicationContext.xml
 /springdemo/
+/applicationContext.out.xml
+/sport.properties
