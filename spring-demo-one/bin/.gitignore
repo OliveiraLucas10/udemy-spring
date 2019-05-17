@@ -1,3 +1,5 @@
 /springdemo/
 /applicationContext.out.xml
 /sport.properties
+/beanScope-applicationContext.xml
+/beanLiveCycle-applicationContext.xml
