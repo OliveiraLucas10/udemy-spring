@@ -11,20 +11,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class HelloWorldController
 {
 
-	// need a controller method to show the initial HTML form
-	@RequestMapping("/showForm")
-	public String showForm()
-	{
-		return "helloworld-form";
-	}
-
-	// need a controller method to process the HTML form
-	@RequestMapping("/processForm")
-	public String processForm()
-	{
-		return "helloworld";
-	}
-
 	// new controller method to read form data and add data to the model
 	@RequestMapping("/processFormVersionTwo")
 	public String letsShoutDude(HttpServletRequest request, Model model)
@@ -44,6 +30,13 @@ public class HelloWorldController
 		return "helloworld";
 	}
 
+	// need a controller method to process the HTML form
+	@RequestMapping("/processForm")
+	public String processForm()
+	{
+		return "helloworld";
+	}
+
 	// new controller method to read form data and add data to the model
 	@RequestMapping("/processFormVersionThree")
 	public String processFormVersionThree(@RequestParam("studantName") String theName, Model model)
@@ -58,6 +51,13 @@ public class HelloWorldController
 		model.addAttribute("message", result);
 
 		return "helloworld";
+	}
+
+	// need a controller method to show the initial HTML form
+	@RequestMapping("/showForm")
+	public String showForm()
+	{
+		return "helloworld-form";
 	}
 
 }

@@ -10,6 +10,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class StudentController
 {
 
+	@RequestMapping("/processForm")
+	public String processForm(@ModelAttribute("student") Student theStudent)
+	{
+		// log the input data
+		System.out.println("theStudent: " + theStudent.getFirstName() + " " + theStudent.getLastName());
+
+		return "student-confirmation";
+	}
+
 	@RequestMapping("/showForm")
 	public String showForm(Model theModel)
 	{
@@ -20,15 +29,6 @@ public class StudentController
 		theModel.addAttribute("student", theStudent);
 
 		return "student-form";
-	}
-
-	@RequestMapping("/processForm")
-	public String processForm(@ModelAttribute("student") Student theStudent)
-	{
-		// log the input data
-		System.out.println("theStudent: " + theStudent.getFirstName() + " " + theStudent.getLastName());
-
-		return "student-confirmation";
 	}
 
 }

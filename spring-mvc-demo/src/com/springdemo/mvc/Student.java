@@ -12,9 +12,9 @@ public class Student
 	private String country;
 
 	private LinkedHashMap<String, String> countryOptions;
-	
+
 	private String favoriteLanguage;
-	
+
 	private String[] operatingSystems;
 
 	public Student()
@@ -28,34 +28,9 @@ public class Student
 		countryOptions.put("US", "United States of America");
 	}
 
-	public String getFirstName()
-	{
-		return firstName;
-	}
-
-	public void setFirstName(String firstName)
-	{
-		this.firstName = firstName;
-	}
-
-	public String getLastName()
-	{
-		return lastName;
-	}
-
-	public void setLastName(String lastName)
-	{
-		this.lastName = lastName;
-	}
-
 	public String getCountry()
 	{
 		return country;
-	}
-
-	public void setCountry(String country)
-	{
-		this.country = country;
 	}
 
 	public LinkedHashMap<String, String> getCountryOptions()
@@ -63,31 +38,49 @@ public class Student
 		return countryOptions;
 	}
 
-	
 	public String getFavoriteLanguage()
 	{
 		return favoriteLanguage;
 	}
 
-	
-	public void setFavoriteLanguage(String favoriteLanguage)
+	public String getFirstName()
 	{
-		this.favoriteLanguage = favoriteLanguage;
+		return firstName;
 	}
 
-	
+	public String getLastName()
+	{
+		return lastName;
+	}
+
 	public String[] getOperatingSystems()
 	{
 		return operatingSystems;
 	}
 
-	
+	public void setCountry(String country)
+	{
+		this.country = country;
+	}
+
+	public void setFavoriteLanguage(String favoriteLanguage)
+	{
+		this.favoriteLanguage = favoriteLanguage;
+	}
+
+	public void setFirstName(String firstName)
+	{
+		this.firstName = firstName;
+	}
+
+	public void setLastName(String lastName)
+	{
+		this.lastName = lastName;
+	}
+
 	public void setOperatingSystems(String[] operatingSystems)
 	{
 		this.operatingSystems = operatingSystems;
 	}
-
-	
-	
 
 }
