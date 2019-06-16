@@ -2,7 +2,7 @@ package com.crud;
 
 import org.hibernate.Session;
 
-import com.entity.Instructor;
+import com.entity.Instructor2;
 import com.entity.InstructorDetail;
 
 public class Creation
@@ -18,10 +18,10 @@ public class Creation
 		session.beginTransaction();
 
 		// create the objects
-//		Instructor tempInstructor = new Instructor("Lucas", "Oliveira", "oliveiraborgeslucas@gmail.com");
-//		InstructorDetail temInstructorDetail = new InstructorDetail("My Channel", "Play AF");
-		Instructor tempInstructor = new Instructor("Madhu", "Patel", "madhu@gmail.com");
-		InstructorDetail temInstructorDetail = new InstructorDetail("My Channel", "Guitar");
+		// Instructor tempInstructor = new Instructor("Lucas", "Oliveira", "oliveiraborgeslucas@gmail.com");
+		// InstructorDetail temInstructorDetail = new InstructorDetail("My Channel", "Play AF");
+		Instructor2 tempInstructor = new Instructor2("Lucas", "O MAXIMO", "madhu@gmail.com");
+		InstructorDetail temInstructorDetail = new InstructorDetail("My Channel2", "Guitar");
 
 		// associate the objects
 		tempInstructor.setInstructorDetail(temInstructorDetail);
