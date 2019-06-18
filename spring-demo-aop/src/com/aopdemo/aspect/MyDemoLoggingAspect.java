@@ -19,7 +19,7 @@ public class MyDemoLoggingAspect
 	// @Before("execution(public void com.aopdemo.dao.AccountDAO.addAccount())")
 	// @Before("execution(void add*())")
 	// @Before("execution(void add*())")
-	@Before("execution(* add*())")
+	@Before("execution(* add*(com.aopdemo.Account))")
 	public void beforeAddAccountAdvice()
 	{
 		System.out.println("\n====>>> Executing @Before advice on method");
