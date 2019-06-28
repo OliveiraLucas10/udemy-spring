@@ -8,7 +8,7 @@
 </head>
 
 <body>
-	<h2>Oliveira COmpany Home Page</h2>
+	<h2>Oliveira Company Home Page</h2>
 
 	<hr>
 
