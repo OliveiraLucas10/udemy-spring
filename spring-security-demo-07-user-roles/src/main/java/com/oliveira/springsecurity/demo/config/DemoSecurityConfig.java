@@ -43,7 +43,9 @@ public class DemoSecurityConfig extends WebSecurityConfigurerAdapter
 						.permitAll() // allow everyone to see login page, no need to be logged in
 						.and()
 						.logout() // add logout support for default URL /logout
-						.permitAll(); // allow everyone to see logout page
+						.permitAll() // allow everyone to see logout page
+						.and()
+						.exceptionHandling().accessDeniedPage("/access-denied"); // request mapping path for an access denied 
 	}
 
 }
