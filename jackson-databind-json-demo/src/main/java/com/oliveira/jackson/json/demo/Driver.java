@@ -28,10 +28,7 @@ public class Driver
 
 			// print out languages
 			for (String tempLang : theStudent.getLanguages())
-			{
 				System.out.println("Languages: " + tempLang);
-
-			}
 
 		}
 		catch (Exception exc)

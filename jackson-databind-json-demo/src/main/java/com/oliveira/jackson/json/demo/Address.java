@@ -18,44 +18,9 @@ public class Address
 
 	}
 
-	public String getStreet()
-	{
-		return street;
-	}
-
-	public void setStreet(String street)
-	{
-		this.street = street;
-	}
-
 	public String getCity()
 	{
 		return city;
-	}
-
-	public void setCity(String city)
-	{
-		this.city = city;
-	}
-
-	public String getState()
-	{
-		return state;
-	}
-
-	public void setState(String state)
-	{
-		this.state = state;
-	}
-
-	public String getZip()
-	{
-		return zip;
-	}
-
-	public void setZip(String zip)
-	{
-		this.zip = zip;
 	}
 
 	public String getCountry()
@@ -63,9 +28,44 @@ public class Address
 		return country;
 	}
 
+	public String getState()
+	{
+		return state;
+	}
+
+	public String getStreet()
+	{
+		return street;
+	}
+
+	public String getZip()
+	{
+		return zip;
+	}
+
+	public void setCity(String city)
+	{
+		this.city = city;
+	}
+
 	public void setCountry(String country)
 	{
 		this.country = country;
+	}
+
+	public void setState(String state)
+	{
+		this.state = state;
+	}
+
+	public void setStreet(String street)
+	{
+		this.street = street;
+	}
+
+	public void setZip(String zip)
+	{
+		this.zip = zip;
 	}
 
 	@Override

@@ -1,5 +1,8 @@
 package com.oliveira.jackson.json.demo;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Student
 {
 
@@ -20,14 +23,9 @@ public class Student
 
 	}
 
-	public int getId()
+	public Address getAddress()
 	{
-		return id;
-	}
-
-	public void setId(int id)
-	{
-		this.id = id;
+		return address;
 	}
 
 	public String getFirstName()
@@ -35,19 +33,19 @@ public class Student
 		return firstName;
 	}
 
-	public void setFirstName(String firstName)
+	public int getId()
 	{
-		this.firstName = firstName;
+		return id;
+	}
+
+	public String[] getLanguages()
+	{
+		return languages;
 	}
 
 	public String getLastName()
 	{
 		return lastName;
-	}
-
-	public void setLastName(String lastName)
-	{
-		this.lastName = lastName;
 	}
 
 	public boolean isActive()
@@ -60,24 +58,29 @@ public class Student
 		this.active = active;
 	}
 
-	public Address getAddress()
-	{
-		return address;
-	}
-
 	public void setAddress(Address address)
 	{
 		this.address = address;
 	}
 
-	public String[] getLanguages()
+	public void setFirstName(String firstName)
 	{
-		return languages;
+		this.firstName = firstName;
+	}
+
+	public void setId(int id)
+	{
+		this.id = id;
 	}
 
 	public void setLanguages(String[] languages)
 	{
 		this.languages = languages;
+	}
+
+	public void setLastName(String lastName)
+	{
+		this.lastName = lastName;
 	}
 
 	@Override
