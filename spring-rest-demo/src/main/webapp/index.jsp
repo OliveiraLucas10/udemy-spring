@@ -7,6 +7,12 @@
 
 <a href="${pageContext.request.contextPath}/test/hello">Hello</a>
 
+<br>
+<hr>
+
+<a href="${pageContext.request.contextPath}/api/students">Students</a>
+
+
 </body>
 
 
